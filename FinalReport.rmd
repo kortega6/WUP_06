@@ -86,8 +86,19 @@ The numerical results show that 65.10% of white people support capitol punishmen
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
-`
+```{r}
+chisq.test(table1)
+```
 
+```{r}
+chisqtestGC(table1)
+```
+
+
+```{r}
+fisher.test(table1)
+```
+The inferential results show the chi-squared test has a P-Value of 2.2e-16 which is lower than 0.05, so we will reject the null hypothesis. The fisher results show the p value is lower than 0.05, so we will reject the it.
 
 ## More data version
 
@@ -95,3 +106,6 @@ The numerical results show that 65.10% of white people support capitol punishmen
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+In conclusions this bar chart shows an average more white people favored capitol punishment over black and other races. The numerical data shows the 65.10% of white people favor capitoal punishment while 34.9% oppose it. The other two tests show a p-value much lower than 0.05 therefore we reject the null hypothesis. 
+
